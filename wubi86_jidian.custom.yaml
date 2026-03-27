@@ -1,0 +1,32 @@
+# Rime schema settings
+# encoding: utf-8
+
+patch:
+  # 设置「五笔86-极点86」的词典，使用 wubi86_jidian.custom.dict.yaml 文件
+  translator/dictionary: wubi86_jidian.custom
+  # 上屏码自定义
+  translator/comment_format: []
+  # 提示码自定义
+  translator/preedit_format: []
+  # 设置输入法图标
+  # schema/icon: "wubi86_jidian.ico"
+  # schema/full_icon:
+  # schema/half_icon:
+  # schema/ascii_icon:
+  switches:
+    - name: ascii_mode
+      states: [ 中文, 英文 ]
+      reset: 0
+    - name: emoji_suggestion
+      states: [ "😣️","😁️"]
+      reset: 1
+    - name: full_shape
+      states: [ 半角, 全角 ]
+      reset: 0
+    - name: transcription
+      states: [ 简体 , 繁体 ]
+      reset: 0
+    - name: ascii_punct
+      states: [ "。，", "．，" ]
+      reset: 0
+
